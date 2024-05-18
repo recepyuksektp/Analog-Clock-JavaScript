@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gideon Roman", serif;
+}
+body{
+    background-color: #C8AE7D;
+    height: 100vh;
+    overflow-y: hidden;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.clock{
+    border: 10px solid #65451F;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #EAC696;
+}
+.dot{
+    background-color: #65451F;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.clock>span{
+    font-size: 2.5rem;
+    position: absolute;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    cursor: default;
+}
+#twelve{
+    left: 50%;
+    top: 7%;
+    color: #543310;
+}
+#one{
+    left: 70%;
+    top: 13%;
+}
+#two{
+    left: 85%;
+    top: 30%;
+}
+#three{
+    right: 0;
+    top: 50%;
+    color: #543310;
+}
+#four{
+    left: 85%;
+    bottom: 20%;
+}
+#five{
+    left: 70%;
+    bottom: 3%;
+}
+#six{
+    bottom: -3%;
+    left: 50%;
+    color: #543310;
+}
+#seven{
+    bottom: 3%;
+    left: 30%;
+}
+#eight{
+    bottom: 20%;
+    left: 16%;
+}
+#nine{
+    left: 7%;
+    top: 50%;
+    color: #543310;
+}
+#ten{
+    top: 29%;
+    left: 14%;
+}
+#eleven{
+    top: 13%;
+    left: 30%;
+}
+.minute-hand{
+    background-color: transparent;
+    width: 370px;
+    height: 370px;
+    position: relative;
+    top: 15.6%;
+    left: 15.2%;
+    transition: all 0.5s;
+    z-index: 10;
+}
+.minute-hand-rod{
+    position: absolute;
+    background-color: black;
+    width: 7px;
+    height: 50%;
+    left: 49%;
+    border-radius: 5px;
+    border: 2px solid #543310;
+}
+.hour-hand{
+    position: relative;
+    background-color: transparent;
+    width: 270px;
+    height: 270px;
+    bottom: 44.5%;
+    left: 24.5%;
+    transition: all 0.5s;
+    z-index: 20;
+}
+.hour-hand-rod{
+    position: absolute;
+    background-color: black;
+    width: 7px;
+    height: 50%;
+    left: 48.85%;
+    border-radius: 5px;
+    border: 2px solid #543310;
+}
+.second-hand{
+    background-color: transparent;
+    width: 370px;
+    height: 370px;
+    position: relative;
+    bottom: 105%;
+    left: 15.2%;
+    transition: all 0.5s;
+}
+.second-hand-rod{
+    position: absolute;
+    background-color: #C8AE7D;
+    width: 3.5px;
+    height: 50%;
+    left: 49.5%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#brand{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    font-size: 1rem;
+    color: #65451F;
+}
+#brand>span{
+    color: black;
+}
